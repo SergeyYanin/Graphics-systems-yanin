@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#listen-button{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    outline: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 1000px;
+    box-shadow: 1px 1px 3px gray;
+    border: 0;
+    background: url("../assets/microphone.png") 50% 50% no-repeat;
+    background-size: 100px 100px;
+    opacity: 1;
+}
+
+#listen-button:focus,
+#listen-button:hover {
+    background-color: #f9f9f9;
+}
+
+#text{
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+    height: calc(100vh - 400px);
+}

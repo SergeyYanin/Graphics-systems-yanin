@@ -1,0 +1,66 @@
+.image{
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+.image-input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.image-input + label {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px gray;
+}
+.image-input:focus + label,
+.image-input + label:hover {
+    background-color: #f9f9f9;
+}
+
+#image-canvas{
+    width: 100%;
+    height: 100%;
+}
+
+.button-group{
+    width: 60vw;
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+.button{
+    outline: none;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px gray;
+    border: 0;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #f9f9f9;
+}

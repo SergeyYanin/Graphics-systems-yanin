@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лабораторная работа №1</title>
+    <head>
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="image">
+        <canvas id="image-canvas"></canvas>
+        <input id="image-file" class="image-input" type="file" accept="image/*" onchange="upload()">
+        <label for="image-file">Выберите файл</label>
+        <div class="button-group">
+            <input type="button" class="button" value="Черно-белое" onclick="filter.bw()">
+            <input type="button" class="button" value="Сепия" onclick="filter.sepia()">
+            <input type="button" class="button" value="Шумы" onclick="filter.noises()">
+            <input type="button" class="button" value="Сбросить" onclick="filter.reset()">
+        </div>
+    </div>
+</body>
+</html>
